@@ -1,0 +1,8 @@
+.env
+.env.weather
+__pycache__
+data
+Models comparisons
+New Prediction final
+.ipynb_checkpoints
+Model Testing.ipynb

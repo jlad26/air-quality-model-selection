@@ -1,0 +1,11 @@
+,Class,input_chunk_length,batch_size,nr_epochs_val_period,d_model,nhead,num_encoder_layers,num_decoder_layers,dim_feedforward,dropout,activation,likelihood,learning_rate,early_stopper,hidden_size,lstm_layers,num_attention_heads,lags,lags_past_covariates,lags_future_covariates,max_depth,model
+ARIMA,AutoARIMA,,,,,,,,,,,,,,,,,,,,,
+Transformer Base Deterministic,TransformerModel,32,32,1,128,32,4,4,128,0.1,relu,Deterministic,0.001,MeanSquaredError,,,,,,,,
+TFT Base,TFTModel,32,32,1,,,,,,0.1,,Probabilistic,0.001,MeanSquaredError,64,1,4,,,,,
+TFT Base Deterministic,TFTModel,32,32,1,,,,,,0.1,,Deterministic,0.001,MeanSquaredError,64,1,4,,,,,
+TFT Long Input Deterministic,TFTModel,128,32,1,,,,,,0.1,,Deterministic,0.001,MeanSquaredError,64,1,4,,,,,
+Linear Regression,LinearRegressionModel,,,,,,,,,,,,,,,,,32,32,TRUE,,
+TCN Deterministic,TCNModel,32,32,1,,,,,,0.1,,Deterministic,0.001,MeanSquaredError,,,,,,,,
+NBEATS Deterministic,NBEATSModel,32,32,1,,,,,,0.1,,Deterministic,0.001,MeanSquaredError,,,,,,,,
+Block RNN LSTM Deterministic,BlockRNNModel,32,32,1,,,,,,,,Deterministic,0.001,MeanSquaredError,,,,,,,,LSTM
+Exponential Smoothing,ExponentialSmoothing,,,,,,,,,,,,,,,,,,,,,
