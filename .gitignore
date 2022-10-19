@@ -1,3 +1,4 @@
+.~lock*
 .env
 .env.weather
 __pycache__
