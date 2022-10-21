@@ -7,6 +7,9 @@ This is one of two repositories that go hand in hand:
 - **Air Quality Development and Selection** (where you are now) - contains all work done to develop and select a machine learning model for predicting the concentrations of the five pollutants used to measure European Air Quality.
 - [Air Quality Prediction Application](https://github.com/jlad26/air-quality-prediction) - the code for the web application at [airquality.sneezingtrees.com](http://airquality.sneezingtrees.com)
 
+## Data
+All the data required for this project that is not available in this repository (and its sibling) is available on [Google Drive](https://drive.google.com/drive/folders/1oyqjshm5qBBPRnwVxDH2NI_Q4hTdpFci?usp=sharing).
+
 ## Contents
 
 Although the names of the notebooks are generally self-explanatory, here is the order in which I recommend you look at them:
