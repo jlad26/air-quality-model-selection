@@ -355,6 +355,7 @@ class PollutantPredictor:
         for size in ['narrow', 'wide']:
 
             fig_params['figsize'] = (16, 8) if size == 'wide' else (8, 8)
+            fig_params['dpi'] = 75.0 if size == 'wide' else 85.0
             fontsize = 20 if size == 'wide' else 20
             rc = {'font' : {'size' : fontsize}}
 
@@ -398,7 +399,7 @@ class PollutantPredictor:
     ):
 
         forecasts_start, forecasts_end = self._get_bounding_times(forecasts)
-        datefmt = '%-d %b %y'
+        datefmt = '%d/%m/%Y'
         start_date = forecasts_start.strftime(datefmt)
         end_date = forecasts_end.strftime(datefmt)
         date_text = f"{start_date}" if start_date == end_date else f"{start_date} - {end_date}"
